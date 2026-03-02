@@ -26,10 +26,6 @@ class ProductConfigurationRestWishlistItemsAttributesMapper implements ProductCo
      */
     protected $productConfigurationService;
 
-    /**
-     * @param \Spryker\Glue\ProductConfigurationWishlistsRestApi\Processor\Mapper\ProductConfigurationInstanceMapperInterface $productConfigurationInstanceMapper
-     * @param \Spryker\Glue\ProductConfigurationWishlistsRestApi\Dependency\Service\ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface $productConfigurationService
-     */
     public function __construct(
         ProductConfigurationInstanceMapperInterface $productConfigurationInstanceMapper,
         ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface $productConfigurationService
@@ -38,12 +34,6 @@ class ProductConfigurationRestWishlistItemsAttributesMapper implements ProductCo
         $this->productConfigurationService = $productConfigurationService;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\RestWishlistItemsAttributesTransfer $restWishlistItemsAttributesTransfer
-     * @param \Generated\Shared\Transfer\WishlistItemRequestTransfer $wishlistItemRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemRequestTransfer
-     */
     public function mapRestWishlistItemsAttributesTransferToWishlistItemRequestTransfer(
         RestWishlistItemsAttributesTransfer $restWishlistItemsAttributesTransfer,
         WishlistItemRequestTransfer $wishlistItemRequestTransfer
@@ -63,12 +53,6 @@ class ProductConfigurationRestWishlistItemsAttributesMapper implements ProductCo
         return $wishlistItemRequestTransfer->setProductConfigurationInstance($productConfigurationInstance);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\WishlistItemTransfer $wishlistItemTransfer
-     * @param \Generated\Shared\Transfer\RestWishlistItemsAttributesTransfer $restWishlistItemsAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestWishlistItemsAttributesTransfer
-     */
     public function mapWishlistItemTransferToRestWishlistItemsAttributesTransfer(
         WishlistItemTransfer $wishlistItemTransfer,
         RestWishlistItemsAttributesTransfer $restWishlistItemsAttributesTransfer

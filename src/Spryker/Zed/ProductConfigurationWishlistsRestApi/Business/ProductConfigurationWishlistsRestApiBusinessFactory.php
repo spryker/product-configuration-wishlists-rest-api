@@ -23,9 +23,6 @@ use Spryker\Zed\ProductConfigurationWishlistsRestApi\ProductConfigurationWishlis
  */
 class ProductConfigurationWishlistsRestApiBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\ProductConfigurationWishlistsRestApi\Business\Deleter\WishlistItemDeleterInterface
-     */
     public function createWishlistItemDeleter(): WishlistItemDeleterInterface
     {
         return new WishlistItemDeleter(
@@ -34,9 +31,6 @@ class ProductConfigurationWishlistsRestApiBusinessFactory extends AbstractBusine
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductConfigurationWishlistsRestApi\Business\Reader\WishlistItemReaderInterface
-     */
     public function createWishlistItemReader(): WishlistItemReaderInterface
     {
         return new WishlistItemReader(
@@ -44,9 +38,6 @@ class ProductConfigurationWishlistsRestApiBusinessFactory extends AbstractBusine
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductConfigurationWishlistsRestApi\Business\Updater\WishlistItemUpdaterInterface
-     */
     public function createWishlistItemUpdater(): WishlistItemUpdaterInterface
     {
         return new WishlistItemUpdater(
@@ -55,17 +46,11 @@ class ProductConfigurationWishlistsRestApiBusinessFactory extends AbstractBusine
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ProductConfigurationWishlistsRestApi\Dependency\Facade\ProductConfigurationWishlistsRestApiToWishlistFacadeInterface
-     */
     public function getWishlistFacade(): ProductConfigurationWishlistsRestApiToWishlistFacadeInterface
     {
         return $this->getProvidedDependency(ProductConfigurationWishlistsRestApiDependencyProvider::FACADE_WISHLIST);
     }
 
-    /**
-     * @return \Spryker\Zed\ProductConfigurationWishlistsRestApi\Dependency\Service\ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface
-     */
     public function getProductConfigurationService(): ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface
     {
         return $this->getProvidedDependency(ProductConfigurationWishlistsRestApiDependencyProvider::SERVICE_PRODUCT_CONFIGURATION);

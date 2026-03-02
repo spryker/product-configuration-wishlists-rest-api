@@ -27,11 +27,6 @@ class ProductConfigurationWishlistsRestApiDependencyProvider extends AbstractBun
      */
     public const SERVICE_PRODUCT_CONFIGURATION = 'SERVICE_PRODUCT_CONFIGURATION';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideBusinessLayerDependencies(Container $container): Container
     {
         $container = parent::provideBusinessLayerDependencies($container);
@@ -42,11 +37,6 @@ class ProductConfigurationWishlistsRestApiDependencyProvider extends AbstractBun
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addWishlistFacade(Container $container): Container
     {
         $container->set(static::FACADE_WISHLIST, function (Container $container) {
@@ -58,11 +48,6 @@ class ProductConfigurationWishlistsRestApiDependencyProvider extends AbstractBun
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductConfigurationService(Container $container): Container
     {
         $container->set(static::SERVICE_PRODUCT_CONFIGURATION, function (Container $container) {

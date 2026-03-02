@@ -18,9 +18,6 @@ use Spryker\Glue\ProductConfigurationWishlistsRestApi\Processor\Mapper\ProductCo
 
 class ProductConfigurationWishlistsRestApiFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Glue\ProductConfigurationWishlistsRestApi\Processor\Mapper\ProductConfigurationRestWishlistItemsAttributesMapperInterface
-     */
     public function createProductConfigurationRestWishlistItemsAttributesMapper(): ProductConfigurationRestWishlistItemsAttributesMapperInterface
     {
         return new ProductConfigurationRestWishlistItemsAttributesMapper(
@@ -29,9 +26,6 @@ class ProductConfigurationWishlistsRestApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\ProductConfigurationWishlistsRestApi\Processor\Mapper\ProductConfigurationInstanceMapperInterface
-     */
     public function createProductConfigurationInstanceMapper(): ProductConfigurationInstanceMapperInterface
     {
         return new ProductConfigurationInstanceMapper(
@@ -41,9 +35,6 @@ class ProductConfigurationWishlistsRestApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\ProductConfigurationWishlistsRestApi\Processor\Mapper\ProductConfigurationInstancePriceMapperInterface
-     */
     public function createProductConfigurationInstancePriceMapper(): ProductConfigurationInstancePriceMapperInterface
     {
         return new ProductConfigurationInstancePriceMapper();
@@ -65,9 +56,6 @@ class ProductConfigurationWishlistsRestApiFactory extends AbstractFactory
         return $this->getProvidedDependency(ProductConfigurationWishlistsRestApiDependencyProvider::PLUGINS_PRODUCT_CONFIGURATION_PRICE_MAPPER);
     }
 
-    /**
-     * @return \Spryker\Glue\ProductConfigurationWishlistsRestApi\Dependency\Service\ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface
-     */
     public function getProductConfigurationService(): ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface
     {
         return $this->getProvidedDependency(ProductConfigurationWishlistsRestApiDependencyProvider::SERVICE_PRODUCT_CONFIGURATION);

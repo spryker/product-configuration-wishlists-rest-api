@@ -24,11 +24,6 @@ class ProductConfigurationWishlistsRestApiToProductConfigurationServiceBridge im
         $this->productConfigurationService = $productConfigurationService;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer
-     *
-     * @return string
-     */
     public function getProductConfigurationInstanceHash(ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer): string
     {
         return $this->productConfigurationService->getProductConfigurationInstanceHash($productConfigurationInstanceTransfer);

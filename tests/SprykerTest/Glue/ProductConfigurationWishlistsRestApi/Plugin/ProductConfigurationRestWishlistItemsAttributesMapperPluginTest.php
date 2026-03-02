@@ -24,9 +24,6 @@ use Spryker\Glue\ProductConfigurationWishlistsRestApi\Plugin\WishlistsRestApi\Pr
  */
 class ProductConfigurationRestWishlistItemsAttributesMapperPluginTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testMap(): void
     {
         // Arrange

@@ -19,9 +19,6 @@ class WishlistItemReader implements WishlistItemReaderInterface
      */
     protected $productConfigurationService;
 
-    /**
-     * @param \Spryker\Zed\ProductConfigurationWishlistsRestApi\Dependency\Service\ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface $productConfigurationService
-     */
     public function __construct(ProductConfigurationWishlistsRestApiToProductConfigurationServiceInterface $productConfigurationService)
     {
         $this->productConfigurationService = $productConfigurationService;

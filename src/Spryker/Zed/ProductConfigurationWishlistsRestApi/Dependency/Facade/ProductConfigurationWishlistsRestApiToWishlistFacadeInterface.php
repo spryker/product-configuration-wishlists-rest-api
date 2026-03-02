@@ -12,17 +12,7 @@ use Generated\Shared\Transfer\WishlistItemTransfer;
 
 interface ProductConfigurationWishlistsRestApiToWishlistFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\WishlistItemTransfer $wishlistItemTransfer
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemTransfer
-     */
     public function removeItem(WishlistItemTransfer $wishlistItemTransfer): WishlistItemTransfer;
 
-    /**
-     * @param \Generated\Shared\Transfer\WishlistItemTransfer $wishlistItemTransfer
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemResponseTransfer
-     */
     public function updateWishlistItem(WishlistItemTransfer $wishlistItemTransfer): WishlistItemResponseTransfer;
 }

@@ -34,9 +34,6 @@ class DeleteWishlistItemTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testDeleteWishlistItemDeletesWishlistItem(): void
     {
         // Arrange
@@ -61,9 +58,6 @@ class DeleteWishlistItemTest extends Unit
         $this->assertNull($this->tester->findWishlistItemById($wishlistItemTransfer->getIdWishlistItem()));
     }
 
-    /**
-     * @return void
-     */
     public function testDeleteWishlistItemAvoidRemovalCase(): void
     {
         // Arrange

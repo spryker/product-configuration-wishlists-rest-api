@@ -87,9 +87,6 @@ class UpdateWishlistItemTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testUpdateWishlistItemAvoidUpdateCase(): void
     {
         // Arrange
@@ -118,9 +115,6 @@ class UpdateWishlistItemTest extends Unit
         $this->assertFalse($wishlistItemResponseTransfer->getIsSuccess());
     }
 
-    /**
-     * @return void
-     */
     public function testUpdateWishlistItemUpdatesWishlistItemWithoutProductConfiguration(): void
     {
         // Arrange

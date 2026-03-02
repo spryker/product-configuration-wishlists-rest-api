@@ -12,23 +12,11 @@ use Generated\Shared\Transfer\RestWishlistItemProductConfigurationInstanceAttrib
 
 interface ProductConfigurationInstanceMapperInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\RestWishlistItemProductConfigurationInstanceAttributesTransfer $restWishlistItemProductConfigurationInstanceAttributesTransfer
-     * @param \Generated\Shared\Transfer\ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductConfigurationInstanceTransfer
-     */
     public function mapRestWishlistItemProductConfigurationInstanceAttributesToProductConfigurationInstance(
         RestWishlistItemProductConfigurationInstanceAttributesTransfer $restWishlistItemProductConfigurationInstanceAttributesTransfer,
         ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer
     ): ProductConfigurationInstanceTransfer;
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer
-     * @param \Generated\Shared\Transfer\RestWishlistItemProductConfigurationInstanceAttributesTransfer $restWishlistItemProductConfigurationInstanceAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestWishlistItemProductConfigurationInstanceAttributesTransfer
-     */
     public function mapProductConfigurationInstanceToRestWishlistItemProductConfigurationInstanceAttributes(
         ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer,
         RestWishlistItemProductConfigurationInstanceAttributesTransfer $restWishlistItemProductConfigurationInstanceAttributesTransfer

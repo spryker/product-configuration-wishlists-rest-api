@@ -24,10 +24,6 @@ class WishlistItemDeleter implements WishlistItemDeleterInterface
      */
     protected $wishlistFacade;
 
-    /**
-     * @param \Spryker\Zed\ProductConfigurationWishlistsRestApi\Business\Reader\WishlistItemReaderInterface $wishlistItemReader
-     * @param \Spryker\Zed\ProductConfigurationWishlistsRestApi\Dependency\Facade\ProductConfigurationWishlistsRestApiToWishlistFacadeInterface $wishlistFacade
-     */
     public function __construct(
         WishlistItemReaderInterface $wishlistItemReader,
         ProductConfigurationWishlistsRestApiToWishlistFacadeInterface $wishlistFacade

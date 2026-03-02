@@ -51,9 +51,6 @@ class FindWishlistItemByProductConfigurationTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testFindWishlistItemByProductConfigurationFindsCorrectWishlistItemWithConfiguration(): void
     {
         // Arrange
@@ -78,9 +75,6 @@ class FindWishlistItemByProductConfigurationTest extends Unit
         $this->assertSame(static::FAKE_SKU_2, $wishlistItemTransfer->getSku());
     }
 
-    /**
-     * @return void
-     */
     public function testFindWishlistItemByProductConfigurationWithWrongProductConfigurations(): void
     {
         // Arrange
@@ -104,9 +98,6 @@ class FindWishlistItemByProductConfigurationTest extends Unit
         $this->assertNull($wishlistItemTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testFindWishlistItemByProductConfigurationWithUndefinedSku(): void
     {
         // Arrange
@@ -130,9 +121,6 @@ class FindWishlistItemByProductConfigurationTest extends Unit
         $this->assertNull($wishlistItemTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testFindWishlistItemByProductConfigurationExpectsSkuToBeProvided(): void
     {
         // Arrange

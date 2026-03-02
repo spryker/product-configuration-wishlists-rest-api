@@ -25,21 +25,11 @@ class ProductConfigurationWishlistsRestApiToWishlistFacadeBridge implements Prod
         $this->wishlistFacade = $wishlistFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\WishlistItemTransfer $wishlistItemTransfer
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemTransfer
-     */
     public function removeItem(WishlistItemTransfer $wishlistItemTransfer): WishlistItemTransfer
     {
         return $this->wishlistFacade->removeItem($wishlistItemTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\WishlistItemTransfer $wishlistItemTransfer
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemResponseTransfer
-     */
     public function updateWishlistItem(WishlistItemTransfer $wishlistItemTransfer): WishlistItemResponseTransfer
     {
         return $this->wishlistFacade->updateWishlistItem($wishlistItemTransfer);

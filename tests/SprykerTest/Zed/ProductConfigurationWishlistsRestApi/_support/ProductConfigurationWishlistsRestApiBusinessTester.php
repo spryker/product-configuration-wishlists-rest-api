@@ -36,11 +36,6 @@ class ProductConfigurationWishlistsRestApiBusinessTester extends Actor
 {
     use _generated\ProductConfigurationWishlistsRestApiBusinessTesterActions;
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer
-     *
-     * @return string
-     */
     public function getProductConfigurationInstanceHash(ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer): string
     {
         return $this->getLocator()
@@ -49,13 +44,6 @@ class ProductConfigurationWishlistsRestApiBusinessTester extends Actor
             ->getProductConfigurationInstanceHash($productConfigurationInstanceTransfer);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer
-     * @param \Generated\Shared\Transfer\ProductConfigurationInstanceTransfer|null $productConfigurationInstanceTransfer
-     * @param string|null $sku
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemTransfer
-     */
     public function createWishlistItemWithProductConfigurationInstance(
         CustomerTransfer $customerTransfer,
         ?ProductConfigurationInstanceTransfer $productConfigurationInstanceTransfer = null,
@@ -85,11 +73,6 @@ class ProductConfigurationWishlistsRestApiBusinessTester extends Actor
         return $wishlistItemTransfer;
     }
 
-    /**
-     * @param int $idWishlistItem
-     *
-     * @return \Generated\Shared\Transfer\WishlistItemTransfer|null
-     */
     public function findWishlistItemById(int $idWishlistItem): ?WishlistItemTransfer
     {
         $wishlistItemCriteriaTransfer = (new WishlistItemCriteriaTransfer())
