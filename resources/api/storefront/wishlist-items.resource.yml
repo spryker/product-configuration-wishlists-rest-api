@@ -1,0 +1,19 @@
+resource:
+    name: WishlistItems
+    shortName: wishlist-items
+
+    properties:
+        productConfigurationInstance:
+            type: mixed
+            writable: true
+            readable: true
+            required: false
+            description: 'Product configuration instance attached to the wishlist item (for configurable products).'
+            openapiContext:
+                example:
+                    displayData: '{}'
+                    configuration: '{}'
+                    configuratorKey: CONCRETE_PRODUCT_TYPE
+                    isComplete: false
+                    availableQuantity: 5
+                    prices: []
