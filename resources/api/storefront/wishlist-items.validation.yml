@@ -12,7 +12,8 @@ post:
                             configuratorKey:
                                 - NotBlank
                             isComplete:
-                                - NotNull
+                                - NotNull:
+                                      message: 'This field is missing.'
                                 - Type:
                                       type: boolean
                             availableQuantity:
@@ -88,7 +89,8 @@ patch:
                             configuratorKey:
                                 - NotBlank
                             isComplete:
-                                - NotNull
+                                - NotNull:
+                                      message: 'This field is missing.'
                                 - Type:
                                       type: boolean
                             availableQuantity:
